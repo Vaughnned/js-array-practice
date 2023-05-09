@@ -97,6 +97,11 @@ console.log(removeDupe([1, 2, 3, 4, 5, 4, 3]));
 
 // Put your answer below -------------------------
 
+function twoArrays(arr1, arr2) {
+  return arr1.sort().join() === arr2.sort().join();
+}
+console.log(twoArrays([1, 2, 3, 4], [1, 4, 3, 2]));
+
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
