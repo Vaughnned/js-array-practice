@@ -19,6 +19,11 @@ console.log(problem1("apple", 3));
 
 // Put your answer below -------------------------
 
+function arrayReverse(arr) {
+  return [...arr].reverse();
+}
+console.log(arrayReverse([1, 2, 3, 4]));
+
 // -----------------------------------------------
 
 // ---------------------
