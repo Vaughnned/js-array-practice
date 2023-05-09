@@ -42,6 +42,11 @@ function flyBy(lamps, drone) {
 // Get the mean of an array
 // https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
 
+function getAverage(marks) {
+  let sum = marks.reduce((acc, mark) => acc + mark, 0);
+  return Math.floor(sum / marks.length);
+}
+
 // #5
 // THE SOUL OF WIT: REVERSE AN ARRAY
 // https://www.codewars.com/kata/59b81886460387d8fc000043
