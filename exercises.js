@@ -45,6 +45,7 @@ function truthy(arr) {
 // ---------------------
 
 // Put your answer below -------------------------
+
 function nestedArrays(arr) {
   const obj = {};
   for (let i = 0; i < arr.length; i++) {
@@ -54,24 +55,13 @@ function nestedArrays(arr) {
   }
   return obj;
 }
-console.log(
-  nestedArrays([
-    ["name", "Charlie"],
-    ["color", "brown"],
-    ["age", 10],
-  ])
-);
-// arr[i][0] hint
-
-// const dog = {
-//     name: "charlie",
-//     color: "brown",
-// }
-// const query = "name";
-// dog.query would = undefined;
-
-// dog[query]; = charlie
-// dog["name"]; = charlie
+// console.log(
+//   nestedArrays([
+//     ["name", "Charlie"],
+//     ["color", "brown"],
+//     ["age", 10],
+//   ])
+// );
 
 // -----------------------------------------------
 
@@ -81,6 +71,19 @@ console.log(
 // ---------------------
 
 // Put your answer below -------------------------
+
+function removeDupe(arr) {
+  let seen = [];
+  return arr.filter((n) => {
+    if (!seen.includes(n)) {
+      seen.push(n);
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+console.log(removeDupe([1, 2, 3, 4, 5, 4, 3]));
 
 // -----------------------------------------------
 
