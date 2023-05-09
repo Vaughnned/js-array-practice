@@ -25,6 +25,19 @@ const arr = (N) => {
 // Drone Fly-By
 // https://www.codewars.com/kata/58356a94f8358058f30004b5/train/javascript
 
+function flyBy(lamps, drone) {
+  let d = drone.length;
+  let str = "";
+  for (let i = 0; i < lamps.length; i++) {
+    if (i < d) {
+      str += "o";
+    } else {
+      str += "x";
+    }
+  }
+  return str;
+}
+
 // # 4
 // Get the mean of an array
 // https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
