@@ -8,7 +8,7 @@
 function problem1(str1, num1) {
   return Array(num1).fill(str1);
 }
-console.log(problem1("apple", 3));
+// console.log(problem1("apple", 3));
 
 // -----------------------------------------------
 
@@ -22,7 +22,7 @@ console.log(problem1("apple", 3));
 function arrayReverse(arr) {
   return [...arr].reverse();
 }
-console.log(arrayReverse([1, 2, 3, 4]));
+// console.log(arrayReverse([1, 2, 3, 4]));
 
 // -----------------------------------------------
 
@@ -32,6 +32,10 @@ console.log(arrayReverse([1, 2, 3, 4]));
 
 // Put your answer below -------------------------
 
+function truthy(arr) {
+  return arr.filter((a) => !!a);
+}
+// console.log(truthy([1, "apple", "", undefined, null, 0, 4]));
 // -----------------------------------------------
 
 // ---------------------
@@ -43,17 +47,20 @@ console.log(arrayReverse([1, 2, 3, 4]));
 // Put your answer below -------------------------
 function nestedArrays(arr) {
   const obj = {};
-  let newArray = [];
   for (let i = 0; i < arr.length; i++) {
-    // newArray.push(arr[i][0]);
-    obj[arr[i][0]];
-    obj[arr[i][1]]; // ["name", "charlie"] -- ["color", "brown"] -- ["age", 10]
+    let key = arr[i][0];
+    let value = arr[i][1];
+    obj[key] = value; // ["name", "charlie"] -- ["color", "brown"] -- ["age", 10]
   }
-
   return obj;
-  x;
 }
-
+console.log(
+  nestedArrays([
+    ["name", "Charlie"],
+    ["color", "brown"],
+    ["age", 10],
+  ])
+);
 // arr[i][0] hint
 
 // const dog = {
