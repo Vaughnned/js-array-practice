@@ -5,14 +5,10 @@
 
 // Put your answer below -------------------------
 
-
-
-
-
-
-
-
-
+function problem1(str1, num1) {
+  return Array(num1).fill(str1);
+}
+console.log(problem1("apple", 3));
 
 // -----------------------------------------------
 
@@ -23,15 +19,6 @@
 
 // Put your answer below -------------------------
 
-
-
-
-
-
-
-
-
-
 // -----------------------------------------------
 
 // ---------------------
@@ -40,33 +27,39 @@
 
 // Put your answer below -------------------------
 
-
-
-
-
-
-
-
-
-
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+// Define a function that takes an array of nested arrays and returns an object composed of properties equal to each nested array
 // const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
 
 // Put your answer below -------------------------
+function nestedArrays(arr) {
+  const obj = {};
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    // newArray.push(arr[i][0]);
+    obj[arr[i][0]];
+    obj[arr[i][1]]; // ["name", "charlie"] -- ["color", "brown"] -- ["age", 10]
+  }
 
+  return obj;
+  x;
+}
 
+// arr[i][0] hint
 
+// const dog = {
+//     name: "charlie",
+//     color: "brown",
+// }
+// const query = "name";
+// dog.query would = undefined;
 
-
-
-
-
-
+// dog[query]; = charlie
+// dog["name"]; = charlie
 
 // -----------------------------------------------
 
@@ -76,15 +69,6 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
-
-
-
-
-
-
-
-
 
 // -----------------------------------------------
 
@@ -97,15 +81,6 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
-
-
-
-
-
-
-
-
 
 // -----------------------------------------------
 
@@ -128,15 +103,6 @@
 
 // Put your answer below -------------------------
 
-
-
-
-
-
-
-
-
-
 // -----------------------------------------------
 
 // ---------------------
@@ -146,14 +112,5 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
-
-
-
-
-
-
-
-
 
 // -----------------------------------------------
